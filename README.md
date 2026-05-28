@@ -348,7 +348,7 @@ dysbiosis, contrary to the classical Anna Karenina prediction.
 Panel B: aggregate temporal volatility is non-significant
 (p=0.748), motivating tiered decomposition in Figure 14.*
 
-![Aitchison Dynamics](figures/Figures/figure13_aitchison_dynamics.png)
+![Aitchison Dynamics](figures/Figures/figure_13_aitchison_dynamics.png)
 
 ---
 
@@ -360,7 +360,7 @@ significant difference — IBD instability is localised, not
 community-wide. This dissociation is only visible through
 tiered decomposition.*
 
-![Tiered Volatility](figures/Figures/figure14_tiered_volatility.png)
+![Tiered Volatility](figures/Figures/figure_14_tiered_volatility.png)
 
 ---
 
