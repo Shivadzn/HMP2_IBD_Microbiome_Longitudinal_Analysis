@@ -422,8 +422,6 @@ than newly introduced during disease.
 
 ## Repository Structure
 
-### Repository Structure
-
 ```text
 HMP2_IBD_Microbiome_Longitudinal_Analysis/
 ├── README.md
@@ -475,6 +473,7 @@ HMP2_IBD_Microbiome_Longitudinal_Analysis/
     ├── figure14_aitchison_dynamics.png
     ├── figure15_tiered_volatility.png
     └── figure16_cooccurrence_network.png
+```
 
 ## Reproduce the Analysis
 
