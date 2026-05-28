@@ -479,7 +479,7 @@ HMP2_IBD_Microbiome_Longitudinal_Analysis/
 
 ### Option A — Google Colab (recommended, zero setup)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/HMP2_IBD_Microbiome_Longitudinal_Analysis/blob/main/HMP2_IBD_Microbiome_Longitudinal_Analysis.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/notebook/HMP2_IBD_Microbiome_Longitudinal_Analysis/blob/main/HMP2_IBD_Microbiome_Longitudinal_Analysis.ipynb)
 
 ### Option B — Local environment
 
