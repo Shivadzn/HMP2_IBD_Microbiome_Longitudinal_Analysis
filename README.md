@@ -484,8 +484,8 @@ HMP2_IBD_Microbiome_Longitudinal_Analysis/
 ### Option B — Local environment
 
 ```bash
-git clone https://github.com/Shivadzn/hmp2-ibd-metagenomics
-cd hmp2-ibd-metagenomics
+git clone https://github.com/Shivadzn/HMP2_IBD_Microbiome_Longitudinal_Analysis
+cd HMP2_IBD_Microbiome_Longitudinal_Analysis
 pip install -r requirements.txt
 ```
 
@@ -513,12 +513,13 @@ download and placement instructions.
 
 ---
 
-## Dependencies
+## Dependencies & Environment
 
-numpy · pandas · scipy · scikit-learn · imbalanced-learn
-matplotlib · seaborn · plotly · networkx
-statsmodels · shap · ipython
+This project requires a Python environment running version **3.9+**. All required third-party libraries can be installed directly from the included `requirements.txt` manifest:
 
+```bash
+pip install -r requirements.txt
+```
 ---
 
 ## Results Files
