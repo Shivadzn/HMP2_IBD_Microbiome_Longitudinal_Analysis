@@ -5,7 +5,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/hmp2-ibd-metagenomics/blob/main/HMP2_IBD_Longitudinal_Analysis.ipynb)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-[![bioRxiv](https://img.shields.io/badge/bioRxiv-preprint-blue)](https://biorxiv.org/content/XXXXXXX)
+[![Manuscript - In Progress](https://img.shields.io/badge/Manuscript-In_Progress-orange?style=flat&logo=read-the-docs)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 
