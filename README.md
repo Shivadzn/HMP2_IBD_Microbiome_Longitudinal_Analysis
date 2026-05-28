@@ -3,7 +3,7 @@
 # Compositionally-Aware Longitudinal Microbiome Analysis for IBD Classification 
 ### A Reproducible Re-Analysis of the HMP2 IBDMDB Cohort
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/hmp2-ibd-metagenomics/blob/main/HMP2_IBD_Longitudinal_Analysis.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/HMP2_IBD_Microbiome_Longitudinal_Analysis/blob/main/notebook/HMP2_IBD_Microbiome_Longitudinal_Analysis.ipynb)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 [![Manuscript - In Progress](https://img.shields.io/badge/Manuscript-In_Progress-orange?style=flat&logo=read-the-docs)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
