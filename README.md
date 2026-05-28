@@ -423,13 +423,11 @@ than newly introduced during disease.
 ## Repository Structure
 
 HMP2_IBD_Microbiome_Longitudinal_Analysis/
-│
 ├── README.md
 ├── LICENSE
 ├── CITATION.cff
 ├── requirements.txt
-│
-├── HMP2_IBD_Longitudinal_Analysis.ipynb
+├── HMP2_IBD_Microbiome_Longitudinal_Analysis.ipynb
 │
 ├── data/
 │   └── README.md
@@ -458,22 +456,22 @@ HMP2_IBD_Microbiome_Longitudinal_Analysis/
 │   └── network_hub_species.csv
 │
 └── figures/
-├── figure01_dataset_orientation.png
-├── figure02_prevalence_filter.png
-├── figure03_clr_transformation.png
-├── figure04_alpha_diversity.png
-├── figure05_aitchison_ordination.png
-├── figure06_dysbiosis_score.png
-├── figure07_dysbiosis_fecalcal.png
-├── figure08_volcano_cd_vs_healthy.png
-├── figure09_roc_confusion_matrix.png
-├── figure10_shap_beeswarm.png
-├── figure11_shap_phylum.png
-├── figure12_3class_confusion.png
-├── figure13_trajectory_3d.png
-├── figure14_aitchison_dynamics.png
-├── figure15_tiered_volatility.png
-└── figure16_cooccurrence_network.png
+    ├── figure01_dataset_orientation.png
+    ├── figure02_prevalence_filter.png
+    ├── figure03_clr_transformation.png
+    ├── figure04_alpha_diversity.png
+    ├── figure05_aitchison_ordination.png
+    ├── figure06_dysbiosis_score.png
+    ├── figure07_dysbiosis_fecalcal.png
+    ├── figure08_volcano_cd_vs_healthy.png
+    ├── figure09_roc_confusion_matrix.png
+    ├── figure10_shap_beeswarm.png
+    ├── figure11_shap_phylum.png
+    ├── figure12_3class_confusion.png
+    ├── figure13_trajectory_3d.png
+    ├── figure14_aitchison_dynamics.png
+    ├── figure15_tiered_volatility.png
+    └── figure16_cooccurrence_network.png
 
 ## Reproduce the Analysis
 
