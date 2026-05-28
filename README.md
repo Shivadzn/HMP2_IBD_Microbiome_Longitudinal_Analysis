@@ -422,12 +422,15 @@ than newly introduced during disease.
 
 ## Repository Structure
 
+### Repository Structure
+
+```text
 HMP2_IBD_Microbiome_Longitudinal_Analysis/
 ├── README.md
 ├── LICENSE
 ├── CITATION.cff
 ├── requirements.txt
-├── HMP2_IBD_Microbiome_Longitudinal_Analysis.ipynb
+├── HMP2_IBD_Longitudinal_Analysis.ipynb
 │
 ├── data/
 │   └── README.md
