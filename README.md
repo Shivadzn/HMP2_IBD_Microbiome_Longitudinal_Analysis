@@ -300,7 +300,7 @@ Panel B: near-Normal CLR distribution confirming successful
 removal of compositional artifacts and left skew consistent
 with CD-associated depletion.*
 
-![CLR Transformation](figures/Figures/figure3_clr_comparsion.png)
+![CLR Transformation](figures/Figures/figure3_clr_comparison.png)
 
 ---
 
