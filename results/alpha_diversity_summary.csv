@@ -1,0 +1,6 @@
+,shannon,shannon,shannon,simpson,simpson,simpson,richness,richness,richness,pielou,pielou,pielou
+,mean,std,median,mean,std,median,mean,std,median,mean,std,median
+diagnosis,,,,,,,,,,,,
+Crohns Disease,1.9854,0.5942,2.1532,0.7396,0.1862,0.8037,39.541,13.2549,41.0,0.5461,0.1441,0.5766
+Healthy,2.2419,0.5177,2.3481,0.7903,0.1316,0.837,49.38,12.1132,51.0,0.5779,0.1164,0.594
+Ulcerative Colitis,2.0958,0.5165,2.1392,0.7711,0.1377,0.8068,43.3989,14.5544,43.0,0.5648,0.1103,0.5835

@@ -1,0 +1,23 @@
+# General Analysis & Data Structures
+numpy
+pandas
+
+# Statistical Analysis
+scipy
+statsmodels
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning & Pipeline Modeling
+scikit-learn
+imbalanced-learn
+shap
+
+# Network Analysis
+networkx
+
+# Interactive Notebook Environment
+ipython

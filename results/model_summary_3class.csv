@@ -1,0 +1,2 @@
+model,task,cv_strategy,cv_f1_macro_mean,cv_f1_macro_std,held_out_f1_macro,f1_Crohns Disease,f1_Healthy,f1_Ulcerative Colitis,uc_predicted_as_healthy,uc_predicted_as_cd,note
+Balanced Random Forest (Calibrated),3-class (H vs UC vs CD),GroupKFold(5),0.3629833334671956,0.059691914824221405,0.4228,0.6818,0.349,0.2376,23,14,UC misclassification toward Healthy confirms colon-limited pathophysiology

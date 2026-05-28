@@ -1,0 +1,21 @@
+species,mean_abs_shap,direction,phylum
+Clostridium lavalense,0.02115362054645532,CD↑,Firmicutes
+Bacteroides fragilis,0.017790260733587634,CD↓,Bacteroidetes
+Alistipes shahii,0.0159914477723272,CD↑,Bacteroidetes
+Firmicutes bacterium CAG 83,0.015504196860504783,CD↑,Firmicutes
+Roseburia inulinivorans,0.01187004808433849,CD↑,Firmicutes
+Roseburia intestinalis,0.011639079794968983,CD↑,Firmicutes
+Clostridium bolteae,0.01116583475195697,CD↑,Firmicutes
+Ruminococcus lactaris,0.010653170531497757,CD↑,Firmicutes
+Bacteroides stercoris,0.009548152513313935,CD↑,Bacteroidetes
+Bacteroides uniformis,0.00905932099014979,CD↑,Bacteroidetes
+Dielma fastidiosa,0.008278602222099911,CD↑,Other/Unclassified
+Sutterella parvirubra,0.008145038446051559,CD↑,Proteobacteria
+Gemmiger formicilis,0.008137801773436329,CD↓,Other/Unclassified
+Veillonella parvula,0.007897626943615932,CD↓,Other/Unclassified
+Flavonifractor plautii,0.007490834689687953,CD↑,Other/Unclassified
+Odoribacter splanchnicus,0.007411259470236247,CD↑,Other/Unclassified
+Eubacterium rectale,0.0072313953910947545,CD↑,Other/Unclassified
+Clostridium symbiosum,0.006981588548366334,CD↑,Firmicutes
+Butyricimonas synergistica,0.006961200419442364,CD↓,Other/Unclassified
+Parabacteroides goldsteinii,0.006730867388492057,CD↑,Bacteroidetes

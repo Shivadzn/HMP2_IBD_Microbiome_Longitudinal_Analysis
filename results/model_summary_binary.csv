@@ -1,0 +1,3 @@
+model,task,cv_strategy,auc_mean,auc_std,f1_macro_mean,f1_macro_std
+Balanced Random Forest,Binary (H vs CD),GroupKFold(5),0.6829638584814066,0.06765419013001163,0.6289234480560632,0.0389344197600468
+L1 Logistic Regression,Binary (H vs CD),GroupKFold(5),0.6271249210999352,0.10532378405140372,0.5891543045534418,0.07533313306487283

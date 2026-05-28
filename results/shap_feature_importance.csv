@@ -1,0 +1,123 @@
+species,mean_abs_shap,direction,phylum
+Clostridium lavalense,0.02115362054645532,CD↑,Firmicutes
+Bacteroides fragilis,0.017790260733587634,CD↓,Bacteroidetes
+Alistipes shahii,0.0159914477723272,CD↑,Bacteroidetes
+Firmicutes bacterium CAG 83,0.015504196860504783,CD↑,Firmicutes
+Roseburia inulinivorans,0.01187004808433849,CD↑,Firmicutes
+Roseburia intestinalis,0.011639079794968983,CD↑,Firmicutes
+Clostridium bolteae,0.01116583475195697,CD↑,Firmicutes
+Ruminococcus lactaris,0.010653170531497757,CD↑,Firmicutes
+Bacteroides stercoris,0.009548152513313935,CD↑,Bacteroidetes
+Bacteroides uniformis,0.00905932099014979,CD↑,Bacteroidetes
+Dielma fastidiosa,0.008278602222099911,CD↑,Other/Unclassified
+Sutterella parvirubra,0.008145038446051559,CD↑,Proteobacteria
+Gemmiger formicilis,0.008137801773436329,CD↓,Other/Unclassified
+Veillonella parvula,0.007897626943615932,CD↓,Other/Unclassified
+Flavonifractor plautii,0.007490834689687953,CD↑,Other/Unclassified
+Odoribacter splanchnicus,0.007411259470236247,CD↑,Other/Unclassified
+Eubacterium rectale,0.0072313953910947545,CD↑,Other/Unclassified
+Clostridium symbiosum,0.006981588548366334,CD↑,Firmicutes
+Butyricimonas synergistica,0.006961200419442364,CD↓,Other/Unclassified
+Parabacteroides goldsteinii,0.006730867388492057,CD↑,Bacteroidetes
+Clostridium bolteae CAG 59,0.0065610949373368236,CD↑,Firmicutes
+Blautia obeum,0.006300022829809118,CD↑,Firmicutes
+Clostridium saccharolyticum,0.005998878677013688,CD↑,Firmicutes
+Proteobacteria bacterium CAG 139,0.005988188350597711,CD↑,Other/Unclassified
+Erysipelatoclostridium ramosum,0.00596143396360435,CD↑,Other/Unclassified
+Eubacterium siraeum,0.005936929359264912,CD↑,Other/Unclassified
+Roseburia hominis,0.00590867269761736,CD↑,Firmicutes
+Clostridium aldenense,0.005525205964105812,CD↑,Firmicutes
+Anaerotignum lactatifermentans,0.005380307337021325,CD↑,Other/Unclassified
+Alistipes finegoldii,0.005359724324579086,CD↑,Bacteroidetes
+Bacteroides finegoldii,0.005209180874277106,CD↓,Bacteroidetes
+Eisenbergiella massiliensis,0.0051251111674952225,CD↑,Other/Unclassified
+Bacteroides thetaiotaomicron,0.005122812499378917,CD↑,Bacteroidetes
+Clostridium sp CAG 242,0.005116628041252828,CD↓,Firmicutes
+Holdemania filiformis,0.005048667353595868,CD↑,Other/Unclassified
+Bacteroides xylanisolvens,0.005046558283850936,CD↑,Bacteroidetes
+Bifidobacterium adolescentis,0.004938017589587545,CD↓,Actinobacteria
+Ruminococcus bicirculans,0.004806441567167552,CD↑,Firmicutes
+Ruminococcus bromii,0.004416824449817786,CD↑,Firmicutes
+Acidaminococcus intestini,0.004394182206180735,CD↑,Other/Unclassified
+Clostridium innocuum,0.004384858263457328,CD↓,Firmicutes
+Bacteroides ovatus,0.004363126655586538,CD↑,Bacteroidetes
+Parasutterella excrementihominis,0.004267078829191736,CD↑,Other/Unclassified
+Eubacterium sp CAG 38,0.004184502586952734,CD↓,Other/Unclassified
+Dialister invisus,0.0041624233641802885,CD↑,Other/Unclassified
+Streptococcus parasanguinis,0.004112953604312234,CD↑,Other/Unclassified
+Clostridium clostridioforme,0.004071953324999025,CD↑,Firmicutes
+Veillonella sp T11011 6,0.004065589235219044,CD↑,Other/Unclassified
+Ruminococcus gnavus,0.0039043489244223795,CD↑,Firmicutes
+Ruminococcus torques,0.003896016999414557,CD↑,Firmicutes
+Clostridium citroniae,0.003876413698455454,CD↑,Firmicutes
+Barnesiella intestinihominis,0.0037017656471546702,CD↓,Other/Unclassified
+Oscillibacter sp 57 20,0.003697945045575703,CD↑,Other/Unclassified
+Alistipes putredinis,0.003663651545254336,CD↑,Bacteroidetes
+Clostridium spiroforme,0.0035860111184233645,CD↑,Firmicutes
+Veillonella infantium,0.0035121888671361583,CD↑,Other/Unclassified
+Veillonella dispar,0.0034248598795181885,CD↑,Other/Unclassified
+Bacteroides faecis,0.003371380015451688,CD↓,Bacteroidetes
+Parabacteroides distasonis,0.0033234616218748335,CD↑,Bacteroidetes
+Clostridium sp CAG 58,0.0032485810987221016,CD↑,Firmicutes
+Streptococcus salivarius,0.0031937758862095695,CD↑,Other/Unclassified
+Sellimonas intestinalis,0.0031489488742610754,CD↑,Other/Unclassified
+Firmicutes bacterium CAG 94,0.002913080844187687,CD↓,Firmicutes
+Eggerthella lenta,0.002892105860724484,CD↑,Other/Unclassified
+Bacteroides vulgatus,0.002678414325228272,CD↑,Bacteroidetes
+Fusicatenibacter saccharivorans,0.002666077608226391,CD↑,Other/Unclassified
+Oscillibacter sp CAG 241,0.0026514317885907245,CD↓,Other/Unclassified
+Akkermansia muciniphila,0.0026229553608715737,CD↑,Verrucomicrobia
+Lachnospira pectinoschiza,0.0024813773207109694,CD↑,Other/Unclassified
+Phascolarctobacterium faecium,0.0024739538925875235,CD↑,Other/Unclassified
+Intestinimonas butyriciproducens,0.002418809691932529,CD↑,Other/Unclassified
+Haemophilus sp HMSC71H05,0.002399205541830516,CD↑,Other/Unclassified
+Bilophila wadsworthia,0.002367348745532625,CD↑,Proteobacteria
+Lactobacillus rogosae,0.0023627136014382696,CD↑,Other/Unclassified
+Bifidobacterium bifidum,0.0023283105695847705,CD↑,Actinobacteria
+Faecalibacterium prausnitzii,0.0023030581901795056,CD↑,Firmicutes
+Lawsonibacter asaccharolyticus,0.002296703318061669,CD↑,Other/Unclassified
+Alistipes indistinctus,0.0022590263274203308,CD↑,Bacteroidetes
+Bacteroides eggerthii,0.0022553763800268987,CD↓,Bacteroidetes
+Eubacterium ventriosum,0.0022456089828474437,CD↓,Other/Unclassified
+Collinsella intestinalis,0.002199297630276999,CD↑,Actinobacteria
+Hungatella hathewayi,0.0021888295388529794,CD↑,Other/Unclassified
+Anaerostipes hadrus,0.0021493651097849106,CD↓,Other/Unclassified
+Bacteroides caccae,0.002124613603402772,CD↑,Bacteroidetes
+Bifidobacterium longum,0.0021134627190482628,CD↓,Actinobacteria
+Parabacteroides merdae,0.0020889073556256453,CD↑,Bacteroidetes
+Bacteroides massiliensis,0.002055318914193947,CD↑,Bacteroidetes
+Dorea formicigenerans,0.0019627217220447896,CD↑,Other/Unclassified
+Turicimonas muris,0.0019235728334409971,CD↑,Other/Unclassified
+Clostridium asparagiforme,0.0019203424416397098,CD↑,Firmicutes
+Haemophilus parainfluenzae,0.0019142472730403618,CD↑,Other/Unclassified
+Eubacterium eligens,0.001797546138327952,CD↑,Other/Unclassified
+Veillonella atypica,0.0017106987141381408,CD↑,Other/Unclassified
+Bacteroides dorei,0.0016757910598302582,CD↑,Bacteroidetes
+Blautia wexlerae,0.0016689416600169588,CD↑,Firmicutes
+Bacteroides cellulosilyticus,0.0016400504045221735,CD↑,Bacteroidetes
+Clostridium leptum,0.0016276310221230172,CD↑,Firmicutes
+Blautia sp CAG 257,0.00153187307554972,CD↑,Firmicutes
+Roseburia faecis,0.001522279030078247,CD↑,Firmicutes
+Anaeromassilibacillus sp An250,0.001513059504985658,CD↑,Other/Unclassified
+Dorea longicatena,0.0014682006201821524,CD↑,Other/Unclassified
+Collinsella aerofaciens,0.0014669932563052329,CD↑,Actinobacteria
+Agathobaculum butyriciproducens,0.001428191696813567,CD↓,Other/Unclassified
+Bacteroides faecis CAG 32,0.0013715486054237912,CD↑,Bacteroidetes
+Coprococcus comes,0.0013179139869654774,CD↑,Other/Unclassified
+Butyricimonas virosa,0.0012896919196901508,CD↓,Other/Unclassified
+Escherichia coli,0.0012513949960619645,CD↑,Proteobacteria
+Bifidobacterium pseudocatenulatum,0.001228183797904246,CD↓,Actinobacteria
+Streptococcus thermophilus,0.0011925391809653834,CD↓,Other/Unclassified
+Bacteroides intestinalis,0.0011619380722953558,CD↓,Bacteroidetes
+Coprococcus catus,0.0011601011150649684,CD↑,Other/Unclassified
+Ruthenibacterium lactatiformans,0.0011390933984760257,CD↓,Other/Unclassified
+Eubacterium ramulus,0.0011210090370624265,CD↑,Other/Unclassified
+Paraprevotella xylaniphila,0.0010741135269916242,CD↓,Other/Unclassified
+Monoglobus pectinilyticus,0.0010286517093913757,CD↑,Other/Unclassified
+Eisenbergiella tayi,0.000996805806529622,CD↑,Other/Unclassified
+Intestinibacter bartlettii,0.0009763173467855418,CD↑,Other/Unclassified
+Prevotella copri,0.0009664077222151893,CD↓,Other/Unclassified
+Collinsella stercoris,0.0009509332462532055,CD↓,Actinobacteria
+Eubacterium hallii,0.0008783902324261189,CD↓,Other/Unclassified
+Ruminococcaceae bacterium D16,0.0007878709017357779,CD↑,Other/Unclassified
+Anaerotruncus colihominis,0.0006861194366218449,CD↑,Other/Unclassified
