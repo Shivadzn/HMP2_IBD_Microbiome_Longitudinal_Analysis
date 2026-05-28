@@ -5,7 +5,7 @@
 
 # HMP2 IBD Microbiome Longitudinal Analysis
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20427086.svg)](https://doi.org/10.5281/zenodo.20432448)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20432448.svg)](https://doi.org/10.5281/zenodo.20432448)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/HMP2_IBD_Microbiome_Longitudinal_Analysis/blob/main/notebook/HMP2_IBD_Microbiome_Longitudinal_Analysis.ipynb)
 [![Manuscript - In Progress](https://img.shields.io/badge/Manuscript-In_Progress-orange?style=flat&logo=read-the-docs)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
