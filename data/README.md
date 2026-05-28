@@ -1,15 +1,30 @@
+# Data
+
+Raw data for this analysis is not included in this repository
+due to file size and HMP2 data access terms.
+
+---
+
 ## Download Instructions
 
-### Step 1 — Go to the IBDMDB data portal
-
-https://ibdmdb.org
-
-### Step 2 — Download these two files
+### Step 1 — Download the two required files
 
 | File | Direct Link | Description |
 |---|---|---|
-| `hmp2_metadata.tsv` | [Download](https://ibdmdb.org/tunnel/products/HMP2/Metadata/hmp2_metadata.tsv) | Participant metadata including diagnosis, fecal calprotectin, visit week, and clinical scores |
-| `taxonomic_profiles.tsv` | [Download](https://ibdmdb.org/tunnel/products/HMP2/WGS/metaphlan2_taxonomic_profiles.tsv) | MetaPhlAn3 species-level relative abundance profiles |
+| `hmp2_metadata.tsv` | [Download](https://g-227ca.190ebd.75bc.data.globus.org/ibdmdb/metadata/hmp2_metadata_2018-08-20.csv) | Participant metadata — diagnosis, fecal calprotectin, visit week, clinical scores |
+| `taxonomic_profiles.tsv` | [Browse metagenomics products](https://ibdmdb.org/downloads/html/products_MGX_2017-08-12.html) | MetaPhlAn3 species-level relative abundance profiles |
+
+> **Note on taxonomic profiles:** The metagenomics products page
+> contains per-sample files. For the merged taxonomic profiles
+> table used in this analysis, navigate to:
+> https://ibdmdb.org/results → Metagenomics (MGX) → products
+> and download the merged taxonomic profiles TSV
+> (bioBakery Version 3.0 recommended).
+
+### Step 2 — Rename files if necessary
+
+The metadata file downloads as `hmp2_metadata_2018-08-20.csv`.
+Rename it to `hmp2_metadata.tsv` before placing in this directory.
 
 ### Step 3 — Place files in this directory
 
