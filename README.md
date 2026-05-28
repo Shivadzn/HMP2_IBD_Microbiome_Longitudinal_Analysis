@@ -290,7 +290,7 @@ external validation is required before clinical deployment.
 diversity reduction following the gradient Healthy > UC > CD.
 Species richness shows the largest effect (p=6.16×10⁻²⁹, d=0.765).*
 
-![Alpha Diversity](figures/Figers/figure04_alpha_diversity.png)
+![Alpha Diversity](figures/Figures/figure4_alpha_diversity.png)
 
 ---
 
@@ -300,7 +300,7 @@ Panel B: near-Normal CLR distribution confirming successful
 removal of compositional artifacts and left skew consistent
 with CD-associated depletion.*
 
-![CLR Transformation](figures/Figers/figure03_clr_transformation.png)
+![CLR Transformation](figures/Figures/figure3_clr_comparsion.png)
 
 ---
 
@@ -309,7 +309,7 @@ with CD-associated depletion.*
 species. F. prausnitzii depletion and R. gnavus enrichment
 in CD are confirmed — consistent with published IBD biomarkers.*
 
-![Volcano Plot](figures/Figers/figure08_volcano_cd_vs_healthy.png)
+![Volcano Plot](figures/Figures/figure7_volcano_cd_vs_healthy.png)
 
 ---
 
@@ -318,7 +318,7 @@ in CD are confirmed — consistent with published IBD biomarkers.*
 evaluation. F1_macro=0.643, AUC=0.655 — honest out-of-sample
 estimates with zero participant leakage.*
 
-![ROC and Confusion Matrix](figures/Figers/figure09_roc_confusion_matrix.png)
+![ROC and Confusion Matrix](figures/Figures/figure8_roc_confusion_matrix.png)
 
 ---
 
@@ -328,7 +328,7 @@ CD-enriched vs CD-depleted. B. fragilis shows discordant signal
 consistent with known enterotoxigenic vs non-toxigenic strain
 heterogeneity unresolvable at species level.*
 
-![SHAP Beeswarm](figures/Figers/figure10_shap_beeswarm.png)
+![SHAP Beeswarm](figures/Figures/figure9_shap_beeswarm.png)
 
 ---
 
@@ -337,7 +337,7 @@ heterogeneity unresolvable at species level.*
 confirming colon-limited UC pathophysiology at the species level.
 This pattern is a biological finding, not a modelling failure.*
 
-![3-class Confusion](figures/Figers/figure12_3class_confusion.png)
+![3-class Confusion](figures/Figures/figure11_3class_confusion.png)
 
 ---
 
@@ -348,7 +348,7 @@ dysbiosis, contrary to the classical Anna Karenina prediction.
 Panel B: aggregate temporal volatility is non-significant
 (p=0.748), motivating tiered decomposition in Figure 14.*
 
-![Aitchison Dynamics](figures/Figers/figure14_aitchison_dynamics.png)
+![Aitchison Dynamics](figures/Figures/figure13_aitchison_dynamics.png)
 
 ---
 
@@ -360,7 +360,7 @@ significant difference — IBD instability is localised, not
 community-wide. This dissociation is only visible through
 tiered decomposition.*
 
-![Tiered Volatility](figures/Figers/figure15_tiered_volatility.png)
+![Tiered Volatility](figures/Figures/figure14_tiered_volatility.png)
 
 ---
 
@@ -371,7 +371,7 @@ Node size ∝ degree centrality. B. uniformis is the highest hub
 (degree=9). R. gnavus (known CD pathobiont) maintains degree=7
 across pooled samples — ecologically integrated, not invasive.*
 
-![Co-occurrence Network](figures/Figers/figure16_cooccurrence_network.png)
+![Co-occurrence Network](figures/Figures/figure15_cooccurrence_network.png)
 
 ---
 
