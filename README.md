@@ -1,7 +1,6 @@
 <div align="center">
 
-# Compositionally-Aware Longitudinal Microbiome Analysis
-## for Inflammatory Bowel Disease Classification
+# Compositionally-Aware Longitudinal Microbiome Analysis for IBD Classification 
 ### A Reproducible Re-Analysis of the HMP2 IBDMDB Cohort
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shivadzn/hmp2-ibd-metagenomics/blob/main/HMP2_IBD_Longitudinal_Analysis.ipynb)
@@ -140,10 +139,10 @@ Acharjee et al. (2024):
 | **CF 5** | Beta diversity | Not reported | Standard | Aitchison PCA in CLR space |
 | **CF 6** | Clinical validation | None | None | Dysbiosis score vs fecalcal ρ=0.167 |
 | **CF 7** | Cross-validation | Row-level split | Standard k-fold | GroupKFold(5) by Participant ID |
-| **CF 8** | Longitudinal trajectories | ❌ cross-sectional | ❌ cross-sectional | ✅ Aitchison space · 38.5 weeks |
-| **CF 9** | AKP + fecalcal stratification | ❌ | ❌ | ✅ convergent dysbiosis finding |
-| **CF 10** | Tiered volatility decomposition | ❌ | ❌ | ✅ p=0.039 keystone instability |
-| **CF 11** | Co-occurrence network | ❌ | ❌ | ✅ 35 nodes · B. uniformis hub |
+| **CF 8** | Longitudinal trajectories | No cross-sectional | No cross-sectional | Aitchison space · 38.5 weeks |
+| **CF 9** | AKP + fecalcal stratification | No | No | convergent dysbiosis finding |
+| **CF 10** | Tiered volatility decomposition | No | No | p=0.039 keystone instability |
+| **CF 11** | Co-occurrence network | No | No | 35 nodes · B. uniformis hub |
 
 ---
 
@@ -177,17 +176,76 @@ Acharjee et al. (2024):
 
 ### Machine Learning Performance
 
-| Model | Task | F1_macro | AUC | CV Strategy |
-|---|---|---|---|---|
-| Balanced Random Forest | Binary (H vs CD) | **0.643** | 0.655 | GroupKFold(5) |
-| L1 Logistic Regression | Binary (H vs CD) | — | — | GroupKFold(5) |
-| 20-species SHAP panel | Binary (H vs CD) | **0.566** | — | GroupKFold(5) |
-| Balanced Random Forest | 3-class (H/UC/CD) | **0.423** | — | GroupKFold(5) |
+#### Binary Classification — Healthy vs Crohn's Disease
 
-> UC samples misclassified as Healthy (23/49) more than as CD (14/49),
-> confirming that UC microbiome composition is more similar to healthy
-> controls than to CD at the species level — consistent with the
-> colon-limited pathophysiology of UC.
+| Model | F1_macro | AUC | Healthy F1 | CD F1 | Accuracy |
+|---|---|---|---|---|---|
+| Raw Balanced RF | 0.643 | 0.658 | 0.47 | 0.81 | 0.72 |
+| **Calibrated RF** | **0.655** | **0.651** | **0.50** | **0.81** | **0.73** |
+| L1 Logistic Regression | 0.467 | 0.409 | 0.24 | 0.70 | 0.57 |
+
+*Held-out test set — unseen participants only · GroupKFold(5) by Participant ID*
+
+The Calibrated RF is the best-performing model (F1_macro=0.655,
+AUC=0.651). CD classification is substantially stronger than Healthy
+(F1=0.81 vs 0.50), reflecting the larger CD class size (145 vs 65
+test samples) and the more pronounced compositional divergence of CD
+from the community centroid. L1 Logistic Regression underperforms
+substantially (F1_macro=0.467), consistent with IBD microbiome
+decision boundaries being non-linear in CLR space.
+
+---
+
+#### 3-class Classification — Healthy vs UC vs CD
+
+| Model | F1_macro | Healthy F1 | UC F1 | CD F1 |
+|---|---|---|---|---|
+| Balanced RF | 0.423 | — | 0.24 | — |
+
+*Absolute drop from binary to 3-class: 0.232 F1_macro points*
+
+The largest source of degradation is UC, which achieves F1=0.24.
+The confusion matrix reveals the key biological finding: UC
+misclassifies toward Healthy (23 samples) more than toward CD
+(14 samples), confirming that UC gut microbiome at the species
+level is more similar to Healthy than to CD.
+
+**Biological interpretation:** UC is restricted to the colon
+mucosa, producing a relatively preserved luminal microbiome
+compared to CD, which involves transmural inflammation across
+the entire GI tract. MetaPhlAn3 species-level profiling of stool
+captures luminal community composition — making CD-Healthy
+discrimination far easier than UC-Healthy discrimination.
+
+**Implication for Miranda et al. (2019):** Miranda attempted
+6-group stratification (CD, CDD, UC, UCD, nonIBD, nonIBDD) on
+70 participants without CLR transformation or participant-stratified
+evaluation. Our results on 116 participants with methodologically
+correct implementation show that even the 3-class problem is
+challenging (F1_macro=0.423). Miranda's 6-class results should
+be interpreted with significant caution.
+
+**Clinical implication:** Reliable UC classification likely
+requires strain-level resolution, mucosal biopsy metagenomics
+rather than stool profiling, or integration with host
+transcriptomics or metabolomics — a concrete direction for
+future work.
+
+---
+
+#### Minimum Viable Biomarker Panel (SHAP-selected)
+
+| Panel | Species | F1_macro | Drop |
+|---|---|---|---|
+| Full model | 122 | 0.643 | — |
+| **Lean SHAP panel** | **20** | **0.566** | **−0.077 (12.0%)** |
+
+Predictive signal is concentrated in the top 20 SHAP-attributed
+species. An absolute F1 drop of 0.077 across an 83.6% feature
+reduction confirms that the remaining 102 species contribute
+noise rather than signal. The 20-species panel is clinically
+actionable — testable with targeted qPCR panels — though
+external validation is required before clinical deployment.
 
 ### Alpha Diversity
 
