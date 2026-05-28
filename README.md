@@ -581,16 +581,16 @@ pip install -r requirements.txt
 If you use this work please cite:
 
 ```bibtex
-@software{shivagupta2026hmp2ibd,
-  author    = {Shiva Gupta},
-  title     = {Compositionally-Aware Longitudinal Microbiome
-               Analysis for IBD Classification: A Reproducible
-               Re-Analysis of the HMP2 IBDMDB Cohort},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://doi.org/10.5281/zenodo.XXXXXXX}
-}
+cff-version: 1.2.0
+message: "If you use this work please cite:"
+authors:
+  - family-names: "Gupta"
+    given-names: "Shiva"
+title: "Compositionally-Aware Longitudinal Microbiome Analysis for IBD Classification: A Reproducible Re-Analysis of the HMP2 IBDMDB Cohort"
+version: "1.0.2"
+date-released: 2026-05-28
+doi: "10.5281/zenodo.20432448"
+url: "https://doi.org/10.5281/zenodo.20432448"
 ```
 
 A `CITATION.cff` file is included for automated citation
