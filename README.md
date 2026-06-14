@@ -133,18 +133,18 @@ participant-leakage-free re-analysis of the IBDMDB cohort.
 Acharjee et al. (2024):
 
 | CF | Contribution | Miranda 2019 | Acharjee 2024 | This Work |
-|---|---|---|---|---|
-| **CF 1** | Prevalence filter | Not reported | Not reported | 10% threshold → 122 species |
-| **CF 2** | Participant filter | N/A | N/A | ≥5 timepoints for trajectory subset |
-| **CF 3** | Class balance | Not reported | Not reported | Stratified sampling · F1_macro |
-| **CF 4** | Compositional transform | Raw abundances | CLR (ML only) | CLR uniformly across all analyses |
-| **CF 5** | Beta diversity | Not reported | Standard | Aitchison PCA in CLR space |
-| **CF 6** | Clinical validation | None | None | Dysbiosis score vs fecalcal ρ=0.167 |
-| **CF 7** | Cross-validation | Row-level split | Standard k-fold | GroupKFold(5) by Participant ID |
-| **CF 8** | Longitudinal trajectories | No cross-sectional | No cross-sectional | Aitchison space · 38.5 weeks |
-| **CF 9** | AKP + fecalcal stratification | No | No | convergent dysbiosis finding |
-| **CF 10** | Tiered volatility decomposition | No | No | p=0.039 keystone instability |
-| **CF 11** | Co-occurrence network | No | No | 35 nodes · B. uniformis hub |
+|----|-------------|--------------|---------------|-----------|
+| CF 1 | Prevalence filter | Not applied | ≥20% threshold, genus-level | 10% threshold → 122 species (species-level) |
+| CF 2 | Participant filter | Not applied | Not applied (single timepoint only) | ≥5 timepoints for trajectory subset |
+| CF 3 | Class balance | Not reported; AUROC primary | StratifiedKFold only; AUROC primary; imbalance noted as limitation | BalancedRandomForest · F1_macro primary metric |
+| CF 4 | Compositional transform | Raw relative abundances throughout | CLR for ML pipeline only; DA testing and ordination on untransformed data | CLR applied uniformly across all analyses |
+| CF 5 | Beta diversity | Not performed | Bray-Curtis PCoA (non-compositional) | Aitchison PCA in CLR space (compositionally valid) |
+| CF 6 | Clinical validation | None | Fecal calprotectin used as model feature only | Dysbiosis score validated against fecal calprotectin (Spearman ρ=0.167) |
+| CF 7 | Cross-validation | Row-level split (participant leakage) | StratifiedKFold(10); cross-sectional design precludes leakage | GroupKFold(5) stratified by Participant ID |
+| CF 8 | Longitudinal trajectories | Not performed | Not performed (single timepoint per participant) | Aitchison space · individual trajectories · 38.5-week median follow-up |
+| CF 9 | AKP + fecalcal stratification | Not performed | Not performed | Convergent dysbiosis finding under active inflammation |
+| CF 10 | Tiered volatility decomposition | Not performed | Not performed | Keystone instability in dominant commensals (p=0.039) |
+| CF 11 | Co-occurrence network | Not performed | Partial correlation: 9 genera + 14 metabolites (pre-selected features) | 35-node species co-occurrence network · B. uniformis hub |
 
 ---
 
