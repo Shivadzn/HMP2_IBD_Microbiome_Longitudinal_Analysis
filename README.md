@@ -68,14 +68,19 @@ inflammation — findings invisible to cross-sectional approaches.
 
 ## Background
 
-The HMP2 Inflammatory Bowel Disease Multi-omics Database (IBDMDB)
-is the most comprehensive longitudinal metagenomic resource available
-for IBD research, comprising dense stool sampling over a 57-week
-follow-up period across Healthy controls, Crohn's Disease (CD), and
-Ulcerative Colitis (UC) participants. Despite its explicit longitudinal
-design, prior machine learning studies on this cohort — most notably
-Miranda et al. (2019) and Acharjee et al. (2024) — have treated it
-as a cross-sectional dataset, discarding temporal information entirely.
+Beyond the longitudinal gap, both prior studies suffer from two
+additional methodological limitations. First, neither applies
+compositional data analysis uniformly: Miranda et al. use raw
+relative abundances throughout; Hodgkiss & Acharjee (2025) apply
+CLR only within their ML pipeline, leaving differential abundance
+testing and ordination on untransformed data. Second, Miranda et al.
+conducted 1000-fold cross-validation for feature selection across
+~1,084 samples from only 70 individuals, allowing samples from the
+same participant to appear in both training and CV-test folds —
+contaminating species selection and inflating reported AUC (0.96–0.99).
+This flaw was flagged by two peer reviewers in the published review
+record but never resolved. Hodgkiss & Acharjee avoid this problem
+by construction, as their primary dataset is cross-sectional.
 
 Beyond the longitudinal gap, both prior studies suffer from two
 additional methodological limitations. First, neither applies
@@ -140,7 +145,7 @@ Acharjee et al. (2024):
 | CF 4 | Compositional transform | Raw relative abundances throughout | CLR for ML pipeline only; DA testing and ordination on untransformed data | CLR applied uniformly across all analyses |
 | CF 5 | Beta diversity | Not performed | Bray-Curtis PCoA (non-compositional) | Aitchison PCA in CLR space (compositionally valid) |
 | CF 6 | Clinical validation | None | Fecal calprotectin used as model feature only | Dysbiosis score validated against fecal calprotectin (Spearman ρ=0.167) |
-| CF 7 | Cross-validation | Row-level split (participant leakage) | StratifiedKFold(10); cross-sectional design precludes leakage | GroupKFold(5) stratified by Participant ID |
+| CF 7 | Cross-validation | 1000-fold CV on samples from 70 individuals — within-person leakage in feature selection; final validation on ~7 individuals only | StratifiedKFold(10); cross-sectional design precludes leakage | GroupKFold(5) stratified by Participant ID |
 | CF 8 | Longitudinal trajectories | Not performed | Not performed (single timepoint per participant) | Aitchison space · individual trajectories · 38.5-week median follow-up |
 | CF 9 | AKP + fecalcal stratification | Not performed | Not performed | Convergent dysbiosis finding under active inflammation |
 | CF 10 | Tiered volatility decomposition | Not performed | Not performed | Keystone instability in dominant commensals (p=0.039) |
@@ -395,9 +400,13 @@ biomarkers. *B. fragilis* shows discordant signals consistent with
 known strain-level heterogeneity.
 
 **Finding 4 — GroupKFold gives honest estimates**
-Participant-stratified evaluation prevents memorisation of individual
-gut signatures. Row-level splits as used by Miranda et al. inflate
-performance by allowing the same participant in both train and test sets.
+Participant-stratified GroupKFold(5) evaluation prevents memorisation
+of individual gut signatures. Miranda et al. (2019) used 1000-fold
+CV for feature selection across ~1,084 samples from 70 individuals,
+allowing within-person leakage that contaminated species selection
+and produced inflated AUC values (0.96–0.99) — flagged by peer
+reviewers but unresolved. Our binary AUC of 0.683 reflects genuine
+generalisation, not individual-level memorisation.
 
 **Finding 5 — Microbiome instability is episodic, not chronic**
 Aggregate volatility is non-significant (p=0.748). Tiered
@@ -557,7 +566,7 @@ pip install -r requirements.txt
 | Citation | Journal | DOI |
 |---|---|---|
 | Miranda et al. (2019) | F1000Research | 10.12688/f1000research.15091.2 |
-| Acharjee et al. (2024) | BBA Mol. Basis Dis. | 10.1016/j.bbadis.2024.167618 |
+| Hodgkiss & Acharjee (2025) | BBA Mol. Basis Dis. | 10.1016/j.bbadis.2024.167618 |
 | Laccourreye et al. (2022) | Mathematics | 10.3390/math10121994 |
 | Lloyd-Price et al. (2019) | Nature | 10.1038/s41586-019-1237-9 |
 | Gloor et al. (2017) | Front. Microbiology | 10.3389/fmicb.2017.02224 |
@@ -565,7 +574,7 @@ pip install -r requirements.txt
 | Gevers et al. (2014) | Cell Host & Microbe | 10.1016/j.chom.2014.02.005 |
 | Lundberg & Lee (2017) | NeurIPS | — |
 | Anderson (2006) | Biometrics | 10.1111/j.1541-0420.2005.00440.x |
-| Aitchison (1982) | J. Royal Stat. Soc. B | 10.1111/j.2517-6161.1982.tb01195.x |
+| Aitchison (1986) | The Statistical Analysis of Compositional Data. Chapman and Hall | 10.1007/978-94-009-4109-0 |
 | Sipponen & Kolho (2015) | Scand. J. Gastroenterol. | 10.3109/00365521.2014.987809 |
 | Sokol et al. (2008) | PNAS | 10.1073/pnas.0804812105 |
 | Hall et al. (2017) | Genome Medicine | 10.1186/s13073-017-0490-5 |
